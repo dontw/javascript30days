@@ -1,0 +1,37 @@
+.drumkit-wrap{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.drumkit-button{
+    width: 130px;
+    height: 130px;
+    border: 5px solid $white;
+    border-radius: 5%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:15px;
+    margin-bottom:0px;
+    background-color:rgba(1,1,1,0.2);
+    transition: .25s;
+
+    &--press{
+    transform:scale(1.2);
+    border-color:$lightYellow;
+    box-shadow: 0 0 10px $lightYellow;
+   }
+}
+
+.drumkit-key{
+   text-align: center;
+   font-size: 4rem;
+}
+
+.drumkit-name{
+    text-align: center;
+    margin-top:0.3rem;
+    color: $lightYellow;
+}

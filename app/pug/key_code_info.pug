@@ -1,0 +1,14 @@
+extends ./tamplate/layout.pug
+block title
+    title JavaScript Key Code Info
+block script
+    script(src="./js/key_code_info.js")
+block content
+    
+    h1  The Key Code Info
+    p.subtitle.subtitle--white a widget to get the JS event keycode 
+    .container.keycodes
+        .keycode-num 
+        .keybutton-wrap
+            .keybutton press any key to get the JavaScript event keycode
+        a(href="index.html", title="back to index").back back to index

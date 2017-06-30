@@ -10,3 +10,8 @@ gulp.task('scripts', function(callback){
     callback();
   });
 });
+
+gulp.task('movejs', function(){
+  return gulp.src('./app/js/*.js')
+  .pipe(gulp.dest('./dest/js'))
+});

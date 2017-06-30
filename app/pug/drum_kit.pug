@@ -1,0 +1,53 @@
+extends ./tamplate/layout.pug
+block title
+    title The 30 Days Javascript Challenge !
+block content
+    h1  JavaScript Drum Kit
+    p.subtitle.subtitle--white press buttons and feel the beats!
+    .container
+        .drumkit-wrap
+            .drumkit-button(data-key="65")
+                p.drumkit-key A
+                p.drumkit-name CLAP
+            .drumkit-button(data-key="83")
+                p.drumkit-key S
+                p.drumkit-name HIHAT
+            .drumkit-button(data-key="68")
+                p.drumkit-key D
+                p.drumkit-name KICK
+            .drumkit-button(data-key="70")
+                p.drumkit-key F
+                p.drumkit-name OPENHAT
+            .drumkit-button(data-key="71")
+                p.drumkit-key G
+                p.drumkit-name BOOM
+            .drumkit-button(data-key="90")
+                p.drumkit-key Z
+                p.drumkit-name RIDE
+            .drumkit-button(data-key="88")
+                p.drumkit-key X
+                p.drumkit-name SNARE
+            .drumkit-button(data-key="67")
+                p.drumkit-key C
+                p.drumkit-name TOM
+            .drumkit-button(data-key="86")
+                p.drumkit-key V
+                p.drumkit-name TINK
+            .drumkit-button(data-key="66")
+                p.drumkit-key B
+                p.drumkit-name DOGE
+        a(href="index.html", title="back to index").back back to index
+    
+    audio(data-key="65" src="./sounds/clap.wav")
+    audio(data-key="83" src="./sounds/hihat.wav")
+    audio(data-key="68" src="./sounds/kick.wav")
+    audio(data-key="70" src="./sounds/openhat.wav")
+    audio(data-key="71" src="./sounds/boom.wav")
+    audio(data-key="90" src="./sounds/ride.wav")
+    audio(data-key="88" src="./sounds/snare.wav")
+    audio(data-key="67" src="./sounds/tom.wav")
+    audio(data-key="86" src="./sounds/tink.wav")
+    audio(data-key="66" src="./sounds/tink.wav")
+
+block bottom_script
+    script(src="./js/drumkit.js")

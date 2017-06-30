@@ -1,2 +1,5 @@
-// write your sass here!
-h1{color:red}
+@import './common/_reset';
+@import './common/_common'; 
+@import './page/_keycode';
+@import './page/drumkit';
+

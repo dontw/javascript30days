@@ -1,12 +1,22 @@
-<!DOCTYPE html>
-html(lang="en")
-head
-    meta(charset="UTF-8")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    meta(http-equiv="X-UA-Compatible", content="ie=edge")
-    title Don's simple dev tamplate!
-    script(src="./js/main.js")
-    link(href="/css/main.css", rel="stylesheet")
-body
-    h1  write your html(pug) code here!
-    
+extends ./tamplate/layout.pug
+block title
+    title The 30 Days Javascript Challenge !
+block content
+    h1  The 30 Days Javascript Challenge !
+    p.subtitle.subtitle--white
+        a(href="https://javascript30.com/", title="link of javascript 30") follow  #Javascript30
+    .container
+        .card
+            ul
+                li
+                    a(href="key_code_info.html", title="JavaScript Key Code Info")
+                        span.day Day 1:  
+                        span.title JavaScript Key Code info
+                li
+                    a(href="drum_kit.html", title="JavaScript Drum Kit")
+                        span.day Day 2:  
+                        span.title JavaScript Drum Kit
+                li
+                    a(href="#", title="CSS and JS Clock")
+                        span.day Day 3:  
+                        span.title CSS + JS Clock     

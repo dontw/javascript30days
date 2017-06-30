@@ -1,0 +1,36 @@
+.keycode-num{
+    text-align: center;
+    margin:auto;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 25rem;
+    min-height: 25rem;
+    color: $white;
+}
+
+.keybutton-wrap{
+    text-align: center;
+}
+
+.keybutton{
+    background-image: linear-gradient(#edeeef, #f6f7f8);
+    margin-top: 3rem;
+    border-bottom: .1em solid #dbdbdc;
+    border-top: .1em solid #fff;
+    border-radius: 0.25em;
+    box-shadow: 0 1px 3px #67696e, inset 0 0 5px #fff;
+    color: #6e6f71;
+    font-family: 'Noto Sans', sans-serif;
+    padding:1.5rem 2rem;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    text-shadow: 0 1px 0 #fff  ;
+    z-index: 100;
+    display:inline-block;
+    font-size: 2rem;
+    transition: .3s;
+
+    &--press{
+        transform: scale(0.8);
+    }
+}

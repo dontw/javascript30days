@@ -40,7 +40,7 @@ gulp.task('cssInject',['styles'],function(){
     .pipe(browserSync.stream());
 });
 
-gulp.task('scriptsRefresh',['scripts'] ,function(){
+gulp.task('scriptsRefresh',['movejs'] ,function(){
     browserSync.reload();
 });
 
